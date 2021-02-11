@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+
+/* Main styles */
+body {
+    font-family: Helvetica, Arial, Courier, sans-serif;
+    color: #3C403D;
+    display: grid;
+    justify-items: center;
+    row-gap: 1em;
+    margin: 0.5em;
+    background-color: #DADED4;
+}
+
+main {
+    display: grid;
+    width: 304px;
+    grid-row-gap: 0.5em;
+}
+
+#header {
+    display: grid;
+    justify-items: center;
+    width: 304px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #A3BCB6;
+}
+
+form {
+    display: grid;
+    grid-row-gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+#error p {
+    color: #ff0000;
+}
+
+#generate {
+    background-color: #3C403D;
+    color: #ffffff;
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+#generate:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+#latestEntry {
+    display: grid;
+    grid-row-gap: 0.5em;
+}
+
+#entryHolder {
+    display: grid;
+    grid-row-gap: 0.5em;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+}

@@ -1,5 +1,5 @@
 // Personal API Key for OpenWeatherMap API
-const apiKey = 'cfc8a56aa5890af342bb99ff465e8ad9';
+const apiKey = 'cfc8a56aa5890af342bb99ff465e8ad9&units=imperial';
 
 // Base URL for OpenWeatherMap API
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather';
@@ -93,10 +93,8 @@ document.getElementById('generate').addEventListener('click', (e) => {
 
 /* Function to UPDATE page with most recent entry */
 const updateMostRecentEntry = (res) => {
-    const lastEntry = res[res.length-1];
-    document.getElementById('date').innerHTML = `<p>Date: ${lastEntry.date}</p>`;
-    document.getElementById('zipcode').innerHTML = `<p>Zip code: ${lastEntry.zipcode}</p>`;
-    document.getElementById('temp').innerHTML = `<p>Temperature: ${lastEntry.temperature}
-    <span>&#8457;</span></p>`;
-    document.getElementById('content').innerHTML = `<p>Feeling: ${lastEntry.feeling}</p>`;
+    document.getElementById('date').innerHTML = `<p>Date: ${res.date}</p>`;
+    document.getElementById('zipcode').innerHTML = `<p>Zip code: ${res.zipcode}</p>`;
+    document.getElementById('temp').innerHTML = `<p>Temperature: ${res.temperature} <span>&#8457;</span></p>`;
+    document.getElementById('content').innerHTML = `<p>Feeling: ${res.feeling}</p>`;
 }
